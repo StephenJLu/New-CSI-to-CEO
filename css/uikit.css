@@ -65,6 +65,44 @@ a:hover,
   border-radius: 0;
 }
 
+form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label,
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        input:invalid,
+        textarea:invalid {
+            border-color: red;
+        }
+
+        button {
+            position: relative;
+            display: inline-block;
+            margin-top: 2em;
+            padding: 0.8em 1.5em;
+            background: #4CAF50;
+            border-radius: 6px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1em;
+            color: #FFF;
+            -moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+            -webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+            -o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+            -ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+            transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+            cursor: pointer;
+        }
+
 /*END CUSTOM ENTRIES*/
 
 /* Text-level semantics

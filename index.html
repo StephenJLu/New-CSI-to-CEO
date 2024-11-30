@@ -314,8 +314,61 @@
             uk-video="autoplay: inview"></video>
       </li>
       <li>
-        <video src="https://videos.forensicleaders.org/retention.mp4" width="1920" height="1080" controls
-            uk-video="autoplay: inview"></video>
+        <p>
+        <h1>Contact Us</h1>
+        </p>
+        <form id="contact-form" style="padding-top: 20px">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="response"></p>
+        <script>
+                        const form = document.getElementById('contact-form');
+                        const responseElement = document.getElementById('response');
+
+                        form.addEventListener('submit', async (event) => {
+                            event.preventDefault(); // Prevent default form submission
+
+                            // Client-side validation
+                            const name = document.getElementById('name').value.trim();
+                            const email = document.getElementById('email').value.trim();
+                            const message = document.getElementById('message').value.trim();
+
+                            if (!name || !email || !message) {
+                                responseElement.textContent = 'All fields are required.';
+                                return;
+                            }
+
+                            // Validate email format (extra validation for demonstration)
+                            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailRegex.test(email)) {
+                                responseElement.textContent = 'Please enter a valid email address.';
+                                return;
+                            }
+
+                            // Submit the form data to the webhook
+                            try {
+                                const formData = new FormData(form);
+                                const result = await fetch('https://hook.us2.make.com/h7vxtn6nh4j494frxsbg8mhfpkgbsest', {
+                                    method: 'POST',
+                                    body: formData,
+                                });
+
+                                if (result.ok) {
+                                    responseElement.textContent = 'Message sent successfully!';
+                                } else {
+                                    responseElement.textContent = 'Failed to send your message. Please try again.';
+                                }
+                            } catch (error) {
+                                responseElement.textContent = 'An error occurred. Please try again later.';
+                            }
+                        });
+                    </script> 
       </li>
     </ul>
   </div>
