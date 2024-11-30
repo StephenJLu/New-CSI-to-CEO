@@ -6141,15 +6141,15 @@ ul.uk-nav-sub {
  */
 .uk-slidenav {
   padding: 5px 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 222, 33, 0.5);
 }
 /* Hover */
 .uk-slidenav:hover {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 222, 33, 0.75);
 }
 /* OnClick */
 .uk-slidenav:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 222, 33, 1.0);
 }
 /* Icon modifier
  ========================================================================== */
