@@ -63,12 +63,14 @@
 <!-- END HEADER JUMBOTRON --> 
 
 <!-- SLIDESHOW -->
-<div uk-slideshow="ratio: 4:1; autoplay: true; autoplay-interval: 5000;" style="padding-top: 20px; padding-bottom: 50px;">
-  <div class="uk-slideshow-items">
-    <div> <img src="images/real-CSI.png" alt="Learn the REAL CSI"> </div>
-    <div> <img src="images/DNA.png" alt="Learn DNA Analysis"> </div>
-    <div> <img src="images/BPA.png" alt="Learn Bloodstain Pattern Analysis"> </div>
-    <div> <img src="images/Firearms.png" alt="Learn How a Gun Works"> </div>
+<div class="uk-container-expand">
+  <div uk-slideshow="ratio: 4:1; autoplay: true; autoplay-interval: 5000;" style="padding-top: 20px; padding-bottom: 50px;">
+    <div class="uk-slideshow-items">
+      <div> <img src="images/real-CSI.png" alt="Learn the REAL CSI"> </div>
+      <div> <img src="images/DNA.png" alt="Learn DNA Analysis"> </div>
+      <div> <img src="images/BPA.png" alt="Learn Bloodstain Pattern Analysis"> </div>
+      <div> <img src="images/Firearms.png" alt="Learn How a Gun Works"> </div>
+    </div>
   </div>
 </div>
 
@@ -89,7 +91,11 @@
     <ul class="uk-switcher uk-margin uk-text-large">
       <li>
         <div class="uk-grid-large" uk-grid>
-          <div class="uk-width-1-4@m"><center><img src="images/Cover.webp" width="300px" alt="CSI to CEO Cover" style="padding-top: 50px"></center></div>
+          <div class="uk-width-1-4@m">
+            <center>
+              <img src="images/Cover.webp" width="300px" alt="CSI to CEO Cover" style="padding-top: 50px">
+            </center>
+          </div>
           <div class="uk-width-3-4@m">
             <p>
             <h2>Dive into an insider's perspective into the REAL CSI</h2>
@@ -105,7 +111,11 @@
       </li>
       <li>
         <div class="uk-grid-large" uk-grid>
-          <div class="uk-width-1-4@m"><center><img src="images/steve.webp" width="300px" alt="Stephen J. Lu" style="padding-top: 50px"></center></div>
+          <div class="uk-width-1-4@m">
+            <center>
+              <img src="images/steve.webp" width="300px" alt="Stephen J. Lu" style="padding-top: 50px">
+            </center>
+          </div>
           <div class="uk-width-3-4@m">
             <p>
             <h2>About Stephen</h2>
@@ -194,7 +204,11 @@
       </li>
       <li>
         <div class="uk-grid-large" uk-grid>
-          <div class="uk-width-1-4@m"><center><img src="images/eve.webp" width="300px" alt="Eve Porinchak" style="padding-top: 50px"></center></div>
+          <div class="uk-width-1-4@m">
+            <center>
+              <img src="images/eve.webp" width="300px" alt="Eve Porinchak" style="padding-top: 50px">
+            </center>
+          </div>
           <div class="uk-width-3-4@m">
             <p>
             <h2>About Eve</h2>
@@ -292,7 +306,11 @@
       </li>
       <li>
         <div class="uk-grid-large" uk-grid>
-          <div class="uk-width-1-4@m"><center><img src="images/pat.webp" width="300px" alt="Pat Wertheim" style="padding-top: 50px"></center></div>
+          <div class="uk-width-1-4@m">
+            <center>
+              <img src="images/pat.webp" width="300px" alt="Pat Wertheim" style="padding-top: 50px">
+            </center>
+          </div>
           <div class="uk-width-3-4@m">
             <p>
             <h2>About Pat</h2>
@@ -310,8 +328,172 @@
         </div>
       </li>
       <li>
-        <video src="https://videos.forensicleaders.org/leadership.mp4" width="1920" height="1080" controls
-            uk-video="autoplay: inview"></video>
+        <p>
+        <h1>Book Gallery</h1>
+        </p>
+        <div class="uk-text-center uk-text-small">Best viewed on a desktop computer<br>
+          Tap/hover on photo to remove caption</div>
+        <hr>
+        <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1"
+        uk-slideshow="animation: fade; ratio: 1600:1200;" style="height: auto; width: 100%">
+          <div class="uk-slideshow-items">
+            <div> <img src="images/gallery/50-Cal.webp"
+              alt="Stephen with a .50 Cal rifle"
+              uk-toggle="target: #caption-18; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-18"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen with a .50 Cal rifle</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/test-fire.webp"
+              alt="Stephen preparing to perform test-fires"
+              uk-toggle="target: #caption-19; mode: hover" style="width: auto; height: 100%;">
+              <div id="caption-19"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen preparing to perform test-fires</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/time-out.webp" alt="The Firearms Time-out Room"
+              uk-toggle="target: #caption-2; mode: hover" style="width: auto; height: 100%;">
+              <div id="caption-2"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">The Firearms Time-out Room</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/disassembly.webp" alt="Disassembly of a Desert Eagle pistol"
+              uk-toggle="target: #caption-25; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-25"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Disassembly of a Desert Eagle pistol</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/cylinder.webp" alt="Halos present on a revolver’s cylinder"
+              uk-toggle="target: #caption-3; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-3"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Halos present on a revolver’s cylinder</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/revolver.webp" alt="The firing of a revolver" uk-toggle="target: #caption-8; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-8"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">The firing of a revolver</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/slu-firearms-scope.webp"
+              alt="Stephen working at a comparison microscope"
+              uk-toggle="target: #caption-1; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-1"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen working at a comparison microscope</h3>
+              </div>
+            </div>
+            <div><img src="images/gallery/reference-collection.webp" alt="The firearms reference collection at the San Diego County Sheriff’s Crime Lab" uk-toggle="target: #caption-6; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-6"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">The firearms reference collection at the San Diego County Sheriff’s Crime Lab</h3>
+              </div>
+            </div>
+            <div>
+              <iframe width="1600" height="1200" src="https://www.youtube.com/embed/VyPdnRpzXUU?si=OL5h4QGnrBskhcyK&amp;autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen uk-responsive uk-video="automute: true; autoplay: inview"></iframe>
+            </div>
+            <div> <img src="images/gallery/slu-wheelchair.webp"
+              alt="Stephen at work in the firearms lab"
+              uk-toggle="target: #caption-9; mode: hover" style="height: auto; width: 100%">
+              <div id="caption-9"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen at work in the firearms lab</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/sport-day-slu.webp"
+              alt="Stephen repping the New Orleans Saints, Steve Gleason, and Team Gleason for Sports Day at work"
+              uk-toggle="target: #caption-15; mode: hover" style="height: auto; width: 100%">
+              <div id="caption-15"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen repping the New Orleans Saints, Steve Gleason, and Team Gleason for Sports Day at work</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/insect.webp"
+              alt="Stephen still interested in insects as a CSI" uk-toggle="target: #caption-24; mode: hover" style="width: auto; height: 100%;">
+              <div id="caption-24"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen still interested in insects as a CSI</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/csi-pig.webp" alt="This teacup pig met us at one of our scenes"
+              uk-toggle="target: #caption-23; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-23"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">This teacup pig met us at one of our scenes</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/lionstigersbears.webp" alt="Driving by Lions Tigers & Bears, The San Diego Animal Sanctuary®, on the way to a scene in Alpine, CA"
+              uk-toggle="target: #caption-17; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-17"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Driving by Lions Tigers & Bears, The San Diego Animal Sanctuary®, on the way to a scene in Alpine, CA</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/hike.webp"
+              alt="Sheriff’s CSI team on a hike"
+              uk-toggle="target: #caption-22; mode: hover" style="width: auto; height: 100%;">
+              <div id="caption-22"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Sheriff’s CSI team on a hike</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/scene.webp" alt="Stephen at an OIS at Las Pulgas"
+              uk-toggle="target: #caption-11; mode: hover" style="width: auto; height: 100%;">
+              <div id="caption-11"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen at an OIS at Las Pulgas</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/appleashun.webp"
+              alt="The Apple-A-Shun Kids at their dig site at the Forensic Anthropology Center, University of Tennessee, Knoxville, a.k.a. the Body Farm"
+              uk-toggle="target: #caption-21; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-21"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">The Apple-A-Shun Kids at their dig site at the Forensic Anthropology Center, University of Tennessee, Knoxville, a.k.a. the Body Farm</h3>
+              </div>
+            </div>
+            <div>
+              <iframe width="1600" height="1200" src="https://www.youtube.com/embed/TFixq3gf5f8?si=OifCx5gl-k5UiGIV&amp;autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen uk-responsive uk-video="automute: true; autoplay: inview"></iframe>
+            </div>
+            <div> <img src="images/gallery/mescope.webp" alt="Stephen performing fluorescent microscopy at the NIH"
+              uk-toggle="target: #caption-20; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-20"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen performing fluorescent microscopy at the NIH</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/nihgroup.webp" alt="NIH Blanchette-Mackie Lab with an NPC patient and family"
+              uk-toggle="target: #caption-13; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-13"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">NIH Blanchette-Mackie Lab with an NPC patient and family</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/silicon-valley.webp"
+              alt="Stephen competing at the Silicon Valley Kettlebell Open Competition"
+              uk-toggle="target: #caption-7; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-7"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">Stephen competing at the Silicon Valley Kettlebell Open Competition</h3>
+              </div>
+            </div>
+            <div> <img src="images/gallery/rainbow.webp" alt="There is beauty everywhere. You just have to look."
+              uk-toggle="target: #caption-12; mode: hover" style="width: 100%; height: auto;">
+              <div id="caption-12"
+              class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                <h3 class="uk-margin-remove">There is beauty everywhere. You just have to look.</h3>
+              </div>
+            </div>
+          </div>
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+          uk-slideshow-item="previous"></a> <a class="uk-position-center-right uk-position-small uk-hidden-hover" href
+          uk-slidenav-next uk-slideshow-item="next"></a> </div>
+        <hr>
       </li>
       <li>
         <p>
@@ -374,11 +556,12 @@
   </div>
 </section>
 <!-- END SWITCHER -->
-<div class="row justify-content-center" style="padding-top: 100px">
-  <div class="col-auto"> <a href="https://amzn.to/3Z9PLwJ" target="_blank"><img src="images/amazon.webp" class="img-fluid" alt="Buy on Amazon.com"></a> </div>
+<div class="uk-container">
+  <div class="row justify-content-center" style="padding-top: 100px">
+    <div class="col-auto"> <a href="https://amzn.to/3Z9PLwJ" target="_blank"><img src="images/amazon.webp" class="img-fluid" alt="Buy on Amazon.com"></a> </div>
+  </div>
 </div>
 <!-- FOOTER -->
-<center>
 <footer class="text-center" style="padding-top: 100px; padding-bottom: 50px;">
   <div class="uk-container">
     <div class="row">
