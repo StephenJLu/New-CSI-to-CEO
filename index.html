@@ -30,7 +30,8 @@
 <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P99X4DFT" height="0" width="0"
       style="display:none;visibility:hidden"></iframe>
 </noscript>
-<!-- End Google Tag Manager (noscript) --> 
+<!-- End Google Tag Manager (noscript) -->
+<div data-fera-widget='floating_rating_badge' data-fera-id='fwid_2yTtArq'></div>
 <!-- NAVBAR -->
 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
   <div class="uk-navbar-center"> <a class="uk-navbar-item uk-logo" href="#"><img src="images/wordmark-cropped-transparent.png"
@@ -576,7 +577,24 @@
 </footer>
 <!-- END FOOTER --> 
 
-<!-- JSCRIPTS --> 
+<!-- JSCRIPTS -->
+<!-- // BEGIN // Fera.ai Integration Code - DO NOT MODIFY // --> 
+<script type="application/javascript">
+  window.fera = window.fera || [];
+  (function(){
+    // Fera App Embed v1 
+    const apiKey = "pk_88b05a21a98eb1829e6264f3565f2cc94c204f1900257132f192b11961eb5540";
+    const baseCdnUrl = `https://cdn.fera.ai/js/v3/`;
+    window.fera.push("configure", { api_key: apiKey });
+    if (!document.querySelector('#fera_css')) {
+      const element = document.createElement('link');element.href = `${ baseCdnUrl }fera.css`;element.id = "fera_css";element.rel = 'stylesheet';document.head.prepend(element);
+    }
+
+    if (!(window.fera && !Array.isArray(window.fera)) && !document.querySelector('#fera_js')) {
+      const element = document.createElement('script');element.src = `${ baseCdnUrl }fera.js`;element.id = "fera_js";element.async = true; document.body.append(element);
+    }
+  })();
+</script> 
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script> 
 <script src="js/jquery-3.5.0.min.js"></script> 
 <script src="js/popper.min.js"></script> 
