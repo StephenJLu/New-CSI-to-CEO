@@ -24,3 +24,7 @@ November 30, 2024
 * Photo/video slideshows
 * Basic email contact form
 * Customer reviews and floating widget
+
+## Contact Me 📨
+
+[Contact Stephen](https://www.stephenjlu.com/contact#main)
