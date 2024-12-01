@@ -70,13 +70,25 @@ form {
             margin: auto;
         }
 
-        label,
         input,
         textarea {
-            display: block;
+          border: none;
+          border-bottom: 2px solid #ffde21;
+          background-color: transparent;
+          color: white;
+          padding: 10px 0;
+          font-size: 16px;
+          outline: none;  
+          display: block;
             width: 100%;
-            margin-bottom: 10px;
-            border-radius: 6px;
+            margin-bottom: 20px;
+            
+        }
+               
+        input::placeholder,
+        textarea::placeholder {
+          color: rgba(255, 255, 255, 0.7); /* Semi-transparent white for placeholder */
+          font-style: italic;
         }
 
         input:invalid,
@@ -88,18 +100,13 @@ form {
             position: relative;
             display: inline-block;
             margin-top: 2em;
-            padding: 0.8em 1.5em;
-            background: #4CAF50;
+            padding: 10px 20px;
+            border-color: #ffde21;
+            background: transparent;
             border-radius: 6px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1em;
-            color: #FFF;
-            -moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-            -webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-            -o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-            -ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-            transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+            text-decoration: none;            
+            font-size: 16px;
+            color: #ffde21;            
             cursor: pointer;
         }
 
@@ -452,7 +459,7 @@ pre code {
   outline: none;
 }
 :focus-visible {
-  outline: 2px dotted #ffde21;
+  outline: none;
 }
 /* Selection pseudo-element
  ========================================================================== */

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/bootstrap-5.3.3.css">
 <link rel="stylesheet" href="css/uikit.css">
 <script src="js/uikit.min.js"></script> 
-<script src="js/uikit-icons.min.js"></script> 
+<script src="js/uikit-icons.js"></script> 
 <!-- END Bootstrap and UIKit --> 
 <!-- Google Tag Manager --> 
 <script>(function (w, d, s, l, i) {
@@ -500,15 +500,14 @@
         <p>
         <h1>Contact Us</h1>
         </p>
-        <form id="contact-form" style="padding-top: 20px">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
+        <div>
+        <form id="contact-form" style="padding-top: 20px" uk-scrollspy="target: > input, textarea, button; cls: uk-animation-slide-bottom; delay: 500; repeat: true;">          
+          <input type="text" id="name" name="name" placeholder="Name" required>          
+          <input type="email" id="email" name="email" placeholder="Email" required>          
+          <textarea id="message" name="message" rows="5" placeholder="Enter message here" required></textarea>
+          <button type="submit"><span uk-icon="icon: mail"></span>&nbsp;&nbsp;Send Message</button>
         </form>
+      </div>
         <p id="response"></p>
         <script>
                         const form = document.getElementById('contact-form');
