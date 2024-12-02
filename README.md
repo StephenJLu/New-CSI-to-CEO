@@ -10,7 +10,7 @@ November 30, 2024
 
 * HTML
 * CSS
-* Javascript
+* JavaScript
 
 ## Tools and Technologies 🔧
 
