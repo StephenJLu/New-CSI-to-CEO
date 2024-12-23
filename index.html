@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -738,10 +739,11 @@
           </p>
           <div>
             <form id="contact-form" style="padding-top: 20px"
-              uk-scrollspy="target: > input, textarea, button; cls: uk-animation-slide-bottom; delay: 500; repeat: true;">
+              uk-scrollspy="target: > input, textarea, div, button; cls: uk-animation-slide-bottom; delay: 100; repeat: false;">
               <input type="text" id="name" name="name" placeholder="Name" required>
               <input type="email" id="email" name="email" placeholder="Email" required>
               <textarea id="message" name="message" rows="5" placeholder="Enter message here" required></textarea>
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAAA30n09B49oMBU_q" data-theme="dark">&nbsp;</div>
               <button type="submit"><span uk-icon="icon: mail"></span>&nbsp;&nbsp;Send Message</button>
             </form>
           </div>
